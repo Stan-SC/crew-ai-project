@@ -3,7 +3,7 @@ services:
     name: crew-ai-backend
     env: python
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
-    startCommand: gunicorn "crew_server:app" --bind 0.0.0.0:$PORT --workers 1 --threads 8
+    startCommand: python -m gunicorn wsgi:app --bind 0.0.0.0:$PORT --workers 1 --threads 8 --log-level debug
     envVars:
       - key: PYTHON_VERSION
         value: 3.9.0
