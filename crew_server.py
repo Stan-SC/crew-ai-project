@@ -243,6 +243,7 @@ def run_crew():
         # Configuration des agents
         directeur_factory = Agent(
             role="Directeur Factory",
+            name="Directeur Factory",
             role_description="Pilote l'équipe et assure la qualité du livrable",
             goal=factory_config.goal,
             backstory=factory_config.backstory,
@@ -253,6 +254,7 @@ def run_crew():
 
         chef_de_projet = Agent(
             role="Chef de Projet",
+            name="Chef de Projet",
             role_description="Planifie les tâches et organise le travail d'équipe",
             goal="Créer un plan clair et efficace pour le développement",
             backstory="Expert en gestion de projet avec 10 ans d'expérience",
@@ -263,6 +265,7 @@ def run_crew():
 
         developpeur = Agent(
             role="Développeur",
+            name="Développeur",
             role_description="Écrit du code Python propre et efficace",
             goal="Transformer les spécifications en code fonctionnel",
             backstory="Développeur Python senior avec expertise en bonnes pratiques",
@@ -273,6 +276,7 @@ def run_crew():
 
         testeur = Agent(
             role="Testeur",
+            name="Testeur",
             role_description="Teste et améliore la qualité du code",
             goal="Assurer la qualité et la fiabilité du code",
             backstory="Expert en QA avec une forte attention aux détails",
@@ -355,10 +359,15 @@ def stream():
     def event_stream():
         while True:
             try:
-                update = updates_queue.get()
+                # Utiliser un timeout de 30 secondes pour éviter le blocage
+                update = updates_queue.queue.get(timeout=30)
                 yield f"data: {update}\n\n"
+            except queue.Empty:
+                # Envoyer un heartbeat pour maintenir la connexion
+                yield f"data: {json.dumps({'type': 'heartbeat'})}\n\n"
             except Exception as e:
                 logger.error(f"Erreur dans event_stream: {str(e)}")
+                yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
                 continue
     
     return Response(event_stream(), mimetype='text/event-stream')
@@ -405,6 +414,10 @@ def get_team_status():
     except Exception as e:
         logger.error(f"Erreur lors de la récupération du statut de l'équipe: {str(e)}")
         return jsonify({'error': str(e)}), 500
+
+@app.route("/health")
+def health_check():
+    return {"status": "healthy"}, 200
 
 @app.after_request
 def after_request(response):
