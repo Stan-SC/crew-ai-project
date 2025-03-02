@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.6",
+    "@mui/material": "^6.4.6",
+    "@nivo/bar": "^0.88.0",
+    "@nivo/core": "^0.88.0",
+    "@nivo/line": "^0.88.0",
+    "@nivo/pie": "^0.88.0",
+    "axios": "^1.8.1",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^7.2.0",
+    "socket.io-client": "^4.8.1"
+  }
+}

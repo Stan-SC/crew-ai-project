@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: crew_server
+Version: 0.1.0
+Requires-Dist: flask>=2.0.0
+Requires-Dist: crewai>=0.1.0
+Dynamic: requires-dist

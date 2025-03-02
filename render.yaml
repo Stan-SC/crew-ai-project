@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: crew-ai-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn crew_server:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: OPENAI_API_KEY
+        sync: false
+
+  - type: web
+    name: crew-ai-frontend
+    env: node
+    buildCommand: cd crew-dashboard && npm install && npm run build
+    startCommand: cd crew-dashboard && npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 16.x
+      - key: REACT_APP_API_URL
+        value: https://crew-ai-backend.onrender.com 

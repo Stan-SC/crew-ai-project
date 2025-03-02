@@ -1,0 +1,290 @@
+2025-03-02 17:19:15,770 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:19:15,770 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:19:15,785 - __main__ - INFO - Lancement du travail d'équipe...
+2025-03-02 17:19:15,792 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:19:15,802 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:19:15,808 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:19:16,751 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:19:16] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:19:17,066 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:19:17,082 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:19:17,088 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:19:32,819 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:19:32,823 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:19:32,841 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:19:34,613 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/tests/test_crew_server.py', reloading
+2025-03-02 17:19:37,046 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:19:37,046 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:19:37,066 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:19:37,072 - __main__ - INFO - Lancement du travail d'équipe...
+2025-03-02 17:19:37,075 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:19:37,082 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:19:38,356 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:19:38] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:19:38,411 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:19:38,422 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:19:38,427 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:19:47,559 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/tests/conftest.py', reloading
+2025-03-02 17:19:49,371 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:19:49,371 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:19:49,376 - __main__ - INFO - Lancement du travail d'équipe...
+2025-03-02 17:19:49,389 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:19:49,396 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:19:49,399 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:19:50,714 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:19:50,735 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:19:50,742 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:19:50,796 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:19:50] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:20:03,723 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:20:03,725 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:20:03,772 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:06,980 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:20:07,002 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:20:07,019 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:20,732 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/setup.py', reloading
+2025-03-02 17:20:22,735 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:20:22,736 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:20:22,741 - __main__ - INFO - Lancement du travail d'équipe...
+2025-03-02 17:20:22,761 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:20:22,770 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:20:22,774 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:23,998 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:20:23] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:20:24,219 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:20:24,230 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:20:24,235 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:26,885 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:20:26,887 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:20:26,907 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:28,874 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:20:28,877 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:20:28,884 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:39,496 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/__init__.py', reloading
+2025-03-02 17:20:41,269 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:20:41,269 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:20:41,274 - __main__ - INFO - Lancement du travail d'équipe...
+2025-03-02 17:20:41,294 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:20:41,316 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:20:41,322 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:42,749 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:20:42] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:20:42,912 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:20:42,927 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:20:42,935 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:51,153 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:20:51,158 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:20:51,195 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:20:55,715 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:20:55,719 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:20:55,763 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:21:04,106 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:21:04] "GET / HTTP/1.1" 200 -
+2025-03-02 17:21:04,351 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:21:04] "GET /get_factory_config HTTP/1.1" 200 -
+2025-03-02 17:21:15,670 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:21:15,676 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:21:15,737 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:21:23,190 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:21:23,199 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:21:23,245 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:21:35,207 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:21:35,212 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:21:35,280 - __main__ - INFO - Travail d'équipe terminé
+2025-03-02 17:22:29,193 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:22:29] "GET / HTTP/1.1" 200 -
+2025-03-02 17:22:29,381 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:22:29] "GET /get_factory_config HTTP/1.1" 200 -
+2025-03-02 17:25:16,314 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/tests/test_crew_server.py', reloading
+2025-03-02 17:25:18,999 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:25:18,999 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:25:19,023 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:25:19,025 - __main__ - INFO - Lancement du travail d'équipe...
+2025-03-02 17:25:19,037 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:25:19,046 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:25:19,694 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:25:19] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:25:20,490 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:25:20,504 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:25:20,511 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:25:24,128 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:25:24,145 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:25:24,163 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:25:27,160 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-02 17:25:27,166 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-02 17:25:27,190 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-02 17:25:29,617 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/crew_server.py', reloading
+2025-03-02 17:25:31,417 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:25:31,417 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:25:31,419 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:25:31,433 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:25:31,451 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:25:32,888 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:25:32] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:25:52,330 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/tests/test_crew_server.py', reloading
+2025-03-02 17:25:54,249 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:25:54,249 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:25:54,251 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:25:54,266 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:25:54,273 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:25:55,632 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:25:55] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:26:19,000 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:26:19] "GET / HTTP/1.1" 200 -
+2025-03-02 17:26:19,125 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:26:19] "GET /get_factory_config HTTP/1.1" 200 -
+2025-03-02 17:26:57,908 - __main__ - INFO - Objectif du Directeur Factory mis à jour: créer un agent de recherche capable d'intégrer un prompt utilisateur
+...
+2025-03-02 17:26:57,909 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:26:57] "POST /update_factory_goal HTTP/1.1" 200 -
+2025-03-02 17:27:00,553 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:27:00,553 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:27:00,560 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:27:00] "POST /restart_crew HTTP/1.1" 200 -
+2025-03-02 17:27:00,567 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:27:10,821 - __main__ - INFO - Histoire du Directeur Factory mise à jour: Expert en gestion d'équipe avec une forte expérience en développement et qualité...
+2025-03-02 17:27:10,822 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:27:10] "POST /update_factory_backstory HTTP/1.1" 200 -
+2025-03-02 17:27:13,301 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:27:13,301 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:27:13,304 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:27:13] "POST /restart_crew HTTP/1.1" 200 -
+2025-03-02 17:27:13,308 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:27:13,308 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:27:13] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:31:48,266 - __main__ - INFO - Objectif du Directeur Factory mis à jour: créer un agent de recherche capable d'intégrer un prompt utilisateur
+...
+2025-03-02 17:31:48,268 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:31:48] "POST /update_factory_goal HTTP/1.1" 200 -
+2025-03-02 17:31:50,440 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:31:50,441 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:31:50,449 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:31:50] "POST /restart_crew HTTP/1.1" 200 -
+2025-03-02 17:31:50,454 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:33:39,735 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/crew_server.py', reloading
+2025-03-02 17:33:42,103 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:33:42,103 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:33:42,105 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:33:42,120 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:33:42,129 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:33:43,236 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:33:43] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:33:56,769 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/tests/test_crew_server.py', reloading
+2025-03-02 17:33:58,584 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:33:58,584 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:33:58,586 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:33:58,599 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:33:58,606 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:34:00,046 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:34:00] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:34:16,495 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/tests/test_crew_server.py', reloading
+2025-03-02 17:34:18,731 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:34:18,731 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:34:18,733 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:34:18,748 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:34:18,762 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:34:19,791 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:34:19] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:34:29,608 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:34:29,608 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:34:29,612 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:34:29,633 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.11:5001
+2025-03-02 17:34:29,633 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-02 17:34:29,633 - werkzeug - INFO -  * Restarting with stat
+2025-03-02 17:34:30,923 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:34:30,923 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:34:30,926 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:34:30,942 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:34:30,955 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:34:30,984 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:34:30] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:40:50,744 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:40:50] "GET / HTTP/1.1" 200 -
+2025-03-02 17:40:51,148 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:40:51] "GET /get_factory_config HTTP/1.1" 200 -
+2025-03-02 17:42:11,018 - __main__ - INFO - Objectif du Directeur Factory mis à jour: créer un agent de rechercher web qui intégrera les paramètres d'un prompt utilisateur
+...
+2025-03-02 17:42:11,020 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:42:11,020 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:42:11,031 - __main__ - INFO - Équipe redémarrée après mise à jour de l'objectif
+2025-03-02 17:42:11,034 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:42:11] "POST /update_factory_goal HTTP/1.1" 200 -
+2025-03-02 17:42:11,054 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:42:13,325 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:42:13,325 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:42:13,325 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:42:13] "POST /restart_crew HTTP/1.1" 200 -
+2025-03-02 17:42:13,327 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:42:13,328 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:42:13] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:43:28,595 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:43:28,595 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:43:28,597 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:43:28,655 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.11:5001
+2025-03-02 17:43:28,655 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-02 17:43:28,656 - werkzeug - INFO -  * Restarting with stat
+2025-03-02 17:43:29,905 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:43:29,905 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:43:29,908 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:43:29,919 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:43:29,928 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:43:30,299 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:43:30] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:43:47,957 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:43:47] "GET / HTTP/1.1" 200 -
+2025-03-02 17:43:48,183 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:43:48] "GET /get_factory_config HTTP/1.1" 200 -
+2025-03-02 17:43:54,537 - __main__ - INFO - Objectif du Directeur Factory mis à jour: créer un agent de rechercher web qui intégrera les paramètres d'un prompt utilisateur...
+2025-03-02 17:43:54,539 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:43:54,539 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:43:54,541 - __main__ - INFO - Équipe redémarrée après mise à jour de l'objectif
+2025-03-02 17:43:54,541 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:43:54] "POST /update_factory_goal HTTP/1.1" 200 -
+2025-03-02 17:43:54,546 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:43:58,553 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:43:58,554 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:43:58,554 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:43:58] "POST /restart_crew HTTP/1.1" 200 -
+2025-03-02 17:43:58,560 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:43:58,560 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:43:58] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:45:04,413 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:45:04,413 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:45:04,415 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:45:04,438 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.11:5001
+2025-03-02 17:45:04,438 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-02 17:45:04,439 - werkzeug - INFO -  * Restarting with stat
+2025-03-02 17:45:05,609 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:45:05,609 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:45:05,612 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:45:05,624 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:45:05,637 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:45:07,126 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:45:07] "GET /stream HTTP/1.1" 200 -
+2025-03-02 17:45:15,395 - __main__ - INFO - Objectif du Directeur Factory mis à jour: créer un agent de rechercher web qui intégrera les paramètres d'un prompt utilisateur...
+2025-03-02 17:45:15,396 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:45:15,396 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:45:15,397 - __main__ - INFO - Équipe redémarrée après mise à jour de l'objectif
+2025-03-02 17:45:15,398 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:45:15] "POST /update_factory_goal HTTP/1.1" 200 -
+2025-03-02 17:45:15,402 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:45:55,754 - werkzeug - INFO -  * Detected change in '/Users/stanislas/Crew2test/crew_server.py', reloading
+2025-03-02 17:45:56,031 - werkzeug - INFO -  * Restarting with stat
+2025-03-02 17:45:57,663 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:45:57,663 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:45:57,665 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:45:57,678 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:45:57,688 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:46:04,883 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:46:04,883 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:46:04,885 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:46:04,907 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.11:5001
+2025-03-02 17:46:04,907 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-02 17:46:04,907 - werkzeug - INFO -  * Restarting with stat
+2025-03-02 17:46:06,180 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:46:06,180 - __main__ - INFO - Démarrage du serveur Flask sur le port 5001...
+2025-03-02 17:46:06,183 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:46:06,198 - werkzeug - WARNING -  * Debugger is active!
+2025-03-02 17:46:06,211 - werkzeug - INFO -  * Debugger PIN: 695-014-160
+2025-03-02 17:46:12,786 - __main__ - INFO - Démarrage de l'équipe...
+2025-03-02 17:46:12,786 - __main__ - INFO - Équipe redémarrée avec succès
+2025-03-02 17:46:12,792 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:46:12] "POST /restart_crew HTTP/1.1" 200 -
+2025-03-02 17:46:12,798 - __main__ - ERROR - Erreur dans run_crew: 'Agent' object has no attribute 'name'
+2025-03-02 17:46:15,792 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2025 17:46:15] "GET /stream HTTP/1.1" 200 -

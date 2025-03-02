@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrewAI - Visualisation en Temps Réel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .agent-card {
+            transition: all 0.3s ease;
+        }
+        .agent-card.active {
+            transform: scale(1.02);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .input-field {
+            transition: all 0.2s ease;
+        }
+        .input-field:focus {
+            border-color: #4F46E5;
+            ring: 2px;
+            ring-color: #4F46E5;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-8 text-indigo-600">
+            CrewAI - Visualisation en Temps Réel
+        </h1>
+
+        <!-- Configuration du Directeur Factory -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- Goal -->
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h2 class="text-xl font-semibold mb-4 text-indigo-600">Objectif du Directeur Factory</h2>
+                <textarea 
+                    id="factory-goal" 
+                    class="input-field w-full h-32 p-3 border rounded-lg focus:outline-none"
+                    placeholder="Entrez l'objectif du Directeur Factory..."
+                ></textarea>
+                <button 
+                    onclick="updateFactoryGoal()" 
+                    class="mt-3 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors"
+                >
+                    Mettre à jour l'objectif
+                </button>
+            </div>
+
+            <!-- Backstory -->
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h2 class="text-xl font-semibold mb-4 text-indigo-600">Histoire du Directeur Factory</h2>
+                <textarea 
+                    id="factory-backstory" 
+                    class="input-field w-full h-32 p-3 border rounded-lg focus:outline-none"
+                    placeholder="Entrez l'histoire du Directeur Factory..."
+                ></textarea>
+                <button 
+                    onclick="updateFactoryBackstory()" 
+                    class="mt-3 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors"
+                >
+                    Mettre à jour l'histoire
+                </button>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <!-- Directeur Factory -->
+            <div id="factory-card" class="agent-card bg-white rounded-lg p-6 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-indigo-600">Directeur Factory</h2>
+                <div class="space-y-2">
+                    <p id="factory-status" class="text-gray-600">En attente...</p>
+                    <div class="h-32 overflow-y-auto bg-gray-50 p-3 rounded">
+                        <p id="factory-output" class="text-sm"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chef de Projet -->
+            <div id="chef-card" class="agent-card bg-white rounded-lg p-6 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-indigo-600">Chef de Projet</h2>
+                <div class="space-y-2">
+                    <p id="chef-status" class="text-gray-600">En attente...</p>
+                    <div class="h-32 overflow-y-auto bg-gray-50 p-3 rounded">
+                        <p id="chef-output" class="text-sm"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Développeur -->
+            <div id="dev-card" class="agent-card bg-white rounded-lg p-6 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-indigo-600">Développeur</h2>
+                <div class="space-y-2">
+                    <p id="dev-status" class="text-gray-600">En attente...</p>
+                    <div class="h-32 overflow-y-auto bg-gray-50 p-3 rounded">
+                        <p id="dev-output" class="text-sm"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testeur -->
+            <div id="test-card" class="agent-card bg-white rounded-lg p-6 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-indigo-600">Testeur</h2>
+                <div class="space-y-2">
+                    <p id="test-status" class="text-gray-600">En attente...</p>
+                    <div class="h-32 overflow-y-auto bg-gray-50 p-3 rounded">
+                        <p id="test-output" class="text-sm"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Résultat Final -->
+        <div class="bg-white rounded-lg p-6 shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-indigo-600">Résultat Final</h2>
+            <div class="bg-gray-50 p-4 rounded">
+                <pre id="final-result" class="whitespace-pre-wrap text-sm"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const eventSource = new EventSource('/stream');
+        const agentCards = {
+            'Directeur Factory': {
+                card: document.getElementById('factory-card'),
+                status: document.getElementById('factory-status'),
+                output: document.getElementById('factory-output')
+            },
+            'Chef de Projet': {
+                card: document.getElementById('chef-card'),
+                status: document.getElementById('chef-status'),
+                output: document.getElementById('chef-output')
+            },
+            'Développeur': {
+                card: document.getElementById('dev-card'),
+                status: document.getElementById('dev-status'),
+                output: document.getElementById('dev-output')
+            },
+            'Testeur': {
+                card: document.getElementById('test-card'),
+                status: document.getElementById('test-status'),
+                output: document.getElementById('test-output')
+            }
+        };
+
+        // Charger la configuration initiale du Directeur Factory
+        fetch('/get_factory_config')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('factory-goal').value = data.goal;
+                document.getElementById('factory-backstory').value = data.backstory;
+            });
+
+        function updateFactoryGoal() {
+            const goal = document.getElementById('factory-goal').value;
+            fetch('/update_factory_goal', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ goal: goal })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Objectif du Directeur Factory mis à jour avec succès !');
+                    // Redémarrer l'équipe
+                    fetch('/restart_crew', { method: 'POST' })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                console.log('Équipe redémarrée avec succès');
+                            }
+                        });
+                } else {
+                    alert('Erreur lors de la mise à jour de l\'objectif');
+                }
+            });
+        }
+
+        function updateFactoryBackstory() {
+            const backstory = document.getElementById('factory-backstory').value;
+            fetch('/update_factory_backstory', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ backstory: backstory })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Histoire du Directeur Factory mise à jour avec succès !');
+                    // Redémarrer l'équipe
+                    fetch('/restart_crew', { method: 'POST' })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                console.log('Équipe redémarrée avec succès');
+                            }
+                        });
+                } else {
+                    alert('Erreur lors de la mise à jour de l\'histoire');
+                }
+            });
+        }
+
+        eventSource.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            
+            if (data.type === 'complete') {
+                document.getElementById('final-result').textContent = data.message;
+                return;
+            }
+
+            if (data.type === 'status') {
+                console.log(data.message);
+                return;
+            }
+
+            const agentInfo = agentCards[data.agent];
+            if (agentInfo) {
+                // Mise à jour du statut et de l'output
+                agentInfo.status.textContent = 'En cours...';
+                agentInfo.output.textContent = data.message;
+                
+                // Animation de la carte
+                agentInfo.card.classList.add('active');
+                setTimeout(() => {
+                    agentInfo.card.classList.remove('active');
+                }, 1000);
+            }
+        };
+    </script>
+</body>
+</html> 

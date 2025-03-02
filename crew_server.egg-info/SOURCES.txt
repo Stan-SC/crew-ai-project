@@ -1,0 +1,7 @@
+setup.py
+crew_server.egg-info/PKG-INFO
+crew_server.egg-info/SOURCES.txt
+crew_server.egg-info/dependency_links.txt
+crew_server.egg-info/requires.txt
+crew_server.egg-info/top_level.txt
+tests/test_crew_server.py
