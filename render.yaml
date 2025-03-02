@@ -3,12 +3,18 @@ services:
     name: crew-ai-backend
     env: python
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
-    startCommand: gunicorn crew_server:app
+    startCommand: gunicorn "crew_server:app" --bind 0.0.0.0:$PORT --workers 1 --threads 8
     envVars:
       - key: PYTHON_VERSION
         value: 3.9.0
       - key: OPENAI_API_KEY
         sync: false
+      - key: MISTRAL_API_KEY
+        sync: false
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_APP
+        value: crew_server.py
 
   - type: web
     name: crew-ai-frontend
