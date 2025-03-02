@@ -1,0 +1,1 @@
+web: gunicorn crew_server:app --log-file - 
