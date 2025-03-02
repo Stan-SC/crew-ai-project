@@ -1,4 +1,29 @@
-.env
-.venv/
+# Python
 __pycache__/
-*.pyc 
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+ENV/
+
+# Node
+node_modules/
+/crew-dashboard/build
+/crew-dashboard/.env.local
+/crew-dashboard/.env.development.local
+/crew-dashboard/.env.test.local
+/crew-dashboard/.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Système
+.DS_Store
+Thumbs.db 
